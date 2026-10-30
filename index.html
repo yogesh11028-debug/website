@@ -1,0 +1,389 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S. Yogesh | Mechanical Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3faef;
+            color: #243b2b;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #d5f2c4;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h2 {
+            color: #285c35;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #285c35;
+            margin: 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #76a95e;
+        }
+
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 50px 8%;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .hero-text {
+            max-width: 550px;
+        }
+
+        .hero-text h1 {
+            font-size: 48px;
+            color: #285c35;
+            margin: 15px 0;
+        }
+
+        .hero-text h3 {
+            color: #62994a;
+            margin-bottom: 15px;
+        }
+
+        .hero-text p {
+            color: #58695b;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #8dcc70;
+            color: #173b22;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #70b653;
+        }
+
+        .gear {
+            font-size: 180px;
+            color: #83bd68;
+            text-align: center;
+            animation: rotate 20s linear infinite;
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        section {
+            padding: 70px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            color: #285c35;
+            font-size: 32px;
+            margin-bottom: 35px;
+        }
+
+        .about {
+            background-color: #e4f5da;
+            text-align: center;
+        }
+
+        .about p {
+            max-width: 800px;
+            margin: auto;
+            color: #58695b;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid #d5e9ca;
+            box-shadow: 0 5px 15px rgba(40, 92, 53, 0.08);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+        }
+
+        .card .icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            color: #387246;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #667468;
+            font-size: 14px;
+        }
+
+        .education {
+            background-color: #e4f5da;
+            text-align: center;
+        }
+
+        .education-box {
+            max-width: 700px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            border-left: 6px solid #83bd68;
+        }
+
+        .education-box h3 {
+            color: #285c35;
+            margin-bottom: 10px;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #285c35;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                justify-content: center;
+                gap: 15px;
+            }
+
+            nav {
+                text-align: center;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+                font-size: 13px;
+            }
+
+            .hero {
+                text-align: center;
+            }
+
+            .hero-text h1 {
+                font-size: 38px;
+            }
+
+            .gear {
+                font-size: 120px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>⚙ SY Portfolio</h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#interests">Interests</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <h3>FIRST-YEAR MECHANICAL ENGINEERING STUDENT</h3>
+
+            <h1>Hi, I'm S. Yogesh</h1>
+
+            <h3>Future Mechanical Engineer ⚙️</h3>
+
+            <p>
+                Welcome to my portfolio! I am a first-year Mechanical
+                Engineering student at Mount Zion College of Engineering
+                and Technology. I am passionate about machines, automotive
+                technology, mechanical design, and innovation.
+            </p>
+
+            <a href="#projects" class="btn">Explore My Interests</a>
+        </div>
+
+        <div class="gear">⚙</div>
+    </section>
+
+    <section class="about" id="about">
+        <h2 class="section-title">About Me</h2>
+
+        <p>
+            I am S. Yogesh, a first-year Mechanical Engineering student.
+            I am interested in understanding how machines work and how
+            engineering concepts are used in everyday life. My goal is
+            to improve my technical knowledge, develop practical skills,
+            and become a successful mechanical engineer.
+        </p>
+    </section>
+
+    <section id="interests">
+        <h2 class="section-title">My Interests</h2>
+
+        <div class="cards">
+            <div class="card">
+                <div class="icon">⚙️</div>
+                <h3>Machine Design</h3>
+                <p>
+                    Learning about machine components, mechanisms,
+                    gears, and mechanical systems.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🏎️</div>
+                <h3>Automotive Engineering</h3>
+                <p>
+                    Exploring engines, automobiles, vehicle systems,
+                    and performance.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">📐</div>
+                <h3>CAD Design</h3>
+                <p>
+                    Interested in technical drawing, 3D modelling,
+                    and engineering design.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🔧</div>
+                <h3>Practical Engineering</h3>
+                <p>
+                    Developing problem-solving skills and learning
+                    through practical activities.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="projects">
+        <h2 class="section-title">My Projects</h2>
+
+        <div class="cards">
+            <div class="card">
+                <div class="icon">📏</div>
+                <h3>Engineering Drawing</h3>
+                <p>
+                    Practising engineering sketches, dimensions,
+                    and technical drawing fundamentals.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">⚙️</div>
+                <h3>Mechanical Systems</h3>
+                <p>
+                    Exploring gears, levers, pulleys, and
+                    basic mechanical mechanisms.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">💡</div>
+                <h3>Future Mini Project</h3>
+                <p>
+                    A space to showcase my upcoming engineering
+                    projects and practical experiments.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="education" id="education">
+        <h2 class="section-title">My Education</h2>
+
+        <div class="education-box">
+            <h3>Mount Zion College of Engineering and Technology</h3>
+            <p><strong>Department:</strong> Mechanical Engineering</p>
+            <p><strong>Year:</strong> First Year</p>
+            <p><strong>Student Name:</strong> S. Yogesh</p>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="section-title">Contact Me</h2>
+
+        <p>
+            Thank you for visiting my portfolio!
+            Feel free to contact me to discuss engineering ideas
+            and learning opportunities.
+        </p>
+
+        <a href="mailto:your-email@example.com" class="btn">
+            Send Email
+        </a>
+
+        <p style="font-size: 12px; margin-top: 15px;">
+            Replace the sample email address with your actual email.
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2026 S. Yogesh | Mechanical Engineering Portfolio</p>
+        <p>Designed with ⚙️ and 🌿</p>
+    </footer>
+
+</body>
+</html>
+```
